@@ -15,7 +15,13 @@ public class OutputIzin extends javax.swing.JFrame {
      */
     public OutputIzin(String nama, String asal, String tingkat, String kontak, String alasan) {
         initComponents();
+        namaSantri.setText(nama);
+        asalSantri.setText(asal);
+        tingkatanSantri.setText(tingkat);
+        kontakSantri.setText(kontak);
+        alasanSantri.setText(alasan );
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,21 +32,137 @@ public class OutputIzin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        asalSantri = new javax.swing.JTextField();
+        tingkatanSantri = new javax.swing.JTextField();
+        kontakSantri = new javax.swing.JTextField();
+        alasanSantri = new javax.swing.JTextField();
+        namaSantri = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton1.setText("OK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        asalSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        asalSantri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                asalSantriActionPerformed(evt);
+            }
+        });
+
+        tingkatanSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        tingkatanSantri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tingkatanSantriActionPerformed(evt);
+            }
+        });
+
+        kontakSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        kontakSantri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kontakSantriActionPerformed(evt);
+            }
+        });
+
+        alasanSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        alasanSantri.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alasanSantriActionPerformed(evt);
+            }
+        });
+
+        namaSantri.setBackground(new java.awt.Color(204, 204, 204));
+        namaSantri.setText("Perizinan");
+        namaSantri.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel2.setText("Nama Santri");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(97, 97, 97)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(asalSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kontakSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(alasanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(155, 155, 155)
+                        .addComponent(jButton1)))
+                .addContainerGap(103, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(namaSantri)
+                .addGap(20, 20, 20)
+                .addComponent(asalSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(kontakSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(alasanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(10, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        InputTamu Itamu = new InputTamu();
+        Itamu.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void asalSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asalSantriActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_asalSantriActionPerformed
+
+    private void tingkatanSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tingkatanSantriActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tingkatanSantriActionPerformed
+
+    private void kontakSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kontakSantriActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kontakSantriActionPerformed
+
+    private void alasanSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alasanSantriActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_alasanSantriActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +200,13 @@ public class OutputIzin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField alasanSantri;
+    private javax.swing.JTextField asalSantri;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField kontakSantri;
+    private javax.swing.JLabel namaSantri;
+    private javax.swing.JTextField tingkatanSantri;
     // End of variables declaration//GEN-END:variables
 }
