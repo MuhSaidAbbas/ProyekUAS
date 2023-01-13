@@ -231,6 +231,7 @@ public class InputTelpon extends javax.swing.JFrame {
     }//GEN-LAST:event_kembaliMenuActionPerformed
 
     private void bCetakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCetakActionPerformed
+
     }//GEN-LAST:event_bCetakActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

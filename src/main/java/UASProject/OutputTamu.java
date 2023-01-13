@@ -37,14 +37,26 @@ public class OutputTamu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        namaTamu = new javax.swing.JTextField();
-        namaSantri = new javax.swing.JTextField();
-        tingkatanSantri = new javax.swing.JTextField();
-        statusTamu = new javax.swing.JTextField();
-        asalTamu = new javax.swing.JTextField();
-        kontakTamu = new javax.swing.JTextField();
+        namaTamu = new javax.swing.JLabel();
+        namaSantri = new javax.swing.JLabel();
+        tingkatanSantri = new javax.swing.JLabel();
+        asalTamu = new javax.swing.JLabel();
+        kontakTamu = new javax.swing.JLabel();
+        statusTamu = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,47 +69,29 @@ public class OutputTamu extends javax.swing.JFrame {
             }
         });
 
-        namaTamu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        namaTamu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                namaTamuActionPerformed(evt);
-            }
-        });
+        namaTamu.setBackground(new java.awt.Color(204, 204, 204));
+        namaTamu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        namaTamu.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        namaSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        namaSantri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                namaSantriActionPerformed(evt);
-            }
-        });
+        namaSantri.setBackground(new java.awt.Color(204, 204, 204));
+        namaSantri.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        namaSantri.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        tingkatanSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tingkatanSantri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tingkatanSantriActionPerformed(evt);
-            }
-        });
+        tingkatanSantri.setBackground(new java.awt.Color(204, 204, 204));
+        tingkatanSantri.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tingkatanSantri.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        statusTamu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        statusTamu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                statusTamuActionPerformed(evt);
-            }
-        });
+        asalTamu.setBackground(new java.awt.Color(204, 204, 204));
+        asalTamu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        asalTamu.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        asalTamu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        asalTamu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                asalTamuActionPerformed(evt);
-            }
-        });
+        kontakTamu.setBackground(new java.awt.Color(204, 204, 204));
+        kontakTamu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        kontakTamu.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        kontakTamu.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        kontakTamu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kontakTamuActionPerformed(evt);
-            }
-        });
+        statusTamu.setBackground(new java.awt.Color(204, 204, 204));
+        statusTamu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        statusTamu.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -108,12 +102,12 @@ public class OutputTamu extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(namaTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(statusTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(asalTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kontakTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(kontakTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(statusTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(155, 155, 155)
                         .addComponent(jButton1)))
@@ -122,18 +116,18 @@ public class OutputTamu extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(namaTamu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(namaTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(statusTamu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(asalTamu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kontakTamu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(asalTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(kontakTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(statusTamu, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addContainerGap(28, Short.MAX_VALUE))
@@ -161,30 +155,6 @@ public class OutputTamu extends javax.swing.JFrame {
         Itamu.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void namaTamuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaTamuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_namaTamuActionPerformed
-
-    private void namaSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaSantriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_namaSantriActionPerformed
-
-    private void tingkatanSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tingkatanSantriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tingkatanSantriActionPerformed
-
-    private void statusTamuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statusTamuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_statusTamuActionPerformed
-
-    private void asalTamuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asalTamuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_asalTamuActionPerformed
-
-    private void kontakTamuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kontakTamuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kontakTamuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -223,13 +193,14 @@ public class OutputTamu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField asalTamu;
+    private javax.swing.JLabel asalTamu;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField kontakTamu;
-    private javax.swing.JTextField namaSantri;
-    private javax.swing.JTextField namaTamu;
-    private javax.swing.JTextField statusTamu;
-    private javax.swing.JTextField tingkatanSantri;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel kontakTamu;
+    private javax.swing.JLabel namaSantri;
+    private javax.swing.JLabel namaTamu;
+    private javax.swing.JLabel statusTamu;
+    private javax.swing.JLabel tingkatanSantri;
     // End of variables declaration//GEN-END:variables
 }

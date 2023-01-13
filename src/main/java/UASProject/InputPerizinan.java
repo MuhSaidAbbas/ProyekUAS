@@ -9,7 +9,7 @@ package UASProject;
  * @author Muh. Said Abbas
  */
 public class InputPerizinan extends javax.swing.JFrame {
-
+    int x = 0;
     /**
      * Creates new form Perizinan
      */
@@ -102,7 +102,12 @@ public class InputPerizinan extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Cetak Kartu");
+        jButton3.setText("Tambahkan");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -221,6 +226,15 @@ public class InputPerizinan extends javax.swing.JFrame {
         tingkatanSantri.removeAllItems();
         alasanSantri.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        dataTelpon.setValueAt(namaSantri.getText()), x, 0);
+        dataTelpon.setValueAt(asalSantri.getText()), x, 1);
+        dataTelpon.setValueAt(kontakSantri.getText()), x, 2);
+        dataTelpon.setValueAt(tingkatanSantri.getSelectedItem), x, 3);
+        dataTelpon.setValueAt(alasanSantri), x, 4);
+        x = x + 1;
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

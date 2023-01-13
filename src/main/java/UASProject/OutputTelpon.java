@@ -31,43 +31,15 @@ public class OutputTelpon extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        asalSantri = new javax.swing.JTextField();
-        tingkatanSantri = new javax.swing.JTextField();
-        kontakSantri = new javax.swing.JTextField();
-        namaSantri = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        namaSantri = new javax.swing.JLabel();
+        asalSantri = new javax.swing.JLabel();
+        tingkatanSantri = new javax.swing.JLabel();
+        kontakSantri = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        asalSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        asalSantri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                asalSantriActionPerformed(evt);
-            }
-        });
-
-        tingkatanSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tingkatanSantri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tingkatanSantriActionPerformed(evt);
-            }
-        });
-
-        kontakSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        kontakSantri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kontakSantriActionPerformed(evt);
-            }
-        });
-
-        namaSantri.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        namaSantri.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                namaSantriActionPerformed(evt);
-            }
-        });
 
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +48,22 @@ public class OutputTelpon extends javax.swing.JFrame {
             }
         });
 
+        namaSantri.setBackground(new java.awt.Color(204, 204, 204));
+        namaSantri.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        namaSantri.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        asalSantri.setBackground(new java.awt.Color(204, 204, 204));
+        asalSantri.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        asalSantri.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        tingkatanSantri.setBackground(new java.awt.Color(204, 204, 204));
+        tingkatanSantri.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tingkatanSantri.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        kontakSantri.setBackground(new java.awt.Color(204, 204, 204));
+        kontakSantri.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        kontakSantri.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -83,29 +71,29 @@ public class OutputTelpon extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
+                        .addGap(155, 155, 155)
+                        .addComponent(jButton1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(103, 103, 103)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(asalSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kontakSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(155, 155, 155)
-                        .addComponent(jButton1)))
-                .addContainerGap(103, Short.MAX_VALUE))
+                            .addComponent(asalSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kontakSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(206, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(67, 67, 67)
+                .addComponent(namaSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(asalSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(asalSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(kontakSantri, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addComponent(tingkatanSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(kontakSantri, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
                 .addComponent(jButton1)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
@@ -123,22 +111,6 @@ public class OutputTelpon extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void asalSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_asalSantriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_asalSantriActionPerformed
-
-    private void tingkatanSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tingkatanSantriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tingkatanSantriActionPerformed
-
-    private void kontakSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kontakSantriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kontakSantriActionPerformed
-
-    private void namaSantriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaSantriActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_namaSantriActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         InputTamu Itamu = new InputTamu();
@@ -182,11 +154,11 @@ public class OutputTelpon extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField asalSantri;
+    private javax.swing.JLabel asalSantri;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField kontakSantri;
-    private javax.swing.JTextField namaSantri;
-    private javax.swing.JTextField tingkatanSantri;
+    private javax.swing.JLabel kontakSantri;
+    private javax.swing.JLabel namaSantri;
+    private javax.swing.JLabel tingkatanSantri;
     // End of variables declaration//GEN-END:variables
 }
